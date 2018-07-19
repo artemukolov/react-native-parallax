@@ -32,8 +32,7 @@ var applyPropsToParallaxImages = function(children, props) {
   return children;
 };
 
-
-var ParallaxScrollViewComposition = React.createClass({
+class ParallaxScrollViewComposition extends React.Component {
   propTypes: {
     scrollViewComponent: PropTypes.func,
   },
@@ -79,6 +78,6 @@ var ParallaxScrollViewComposition = React.createClass({
       </ScrollComponent>
     );
   }
-});
+};
 
 module.exports = ParallaxScrollViewComposition;
